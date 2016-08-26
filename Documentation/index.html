@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Material Admin Documentation</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+
+        <div class="jumbotron text-center">
+            <h2>Material Admin Documentation</h2>
+            <br/>
+            <a href="https://wrapbootstrap.com/theme/material-admin-responsive-angularjs-WB011H985" class="btn btn-default">Demo</a>
+            <a href="https://wrapbootstrap.com/theme/material-admin-responsive-angularjs-WB011H985" class="btn btn-default">Purchase</a>
+        </div>
+
+            <div class="content">
+                <div class="c-menu" data-spy="affix" data-offset-top="182">
+                    <ul>
+                        <li><a href="#about">About Material Admin</a></li>
+                        <li><a href="#project_structure">Project Structure</a></li>
+                        <li><a href="#node-npm">NodeJs and NPM</a></li>
+                        <li><a href="#installation">Installation</a></li>
+                        <li><a href="#gruntjs">GruntJs</a></li>
+                        <li><a href="#change-log">Change Log 1.5.3</a></li>
+                        <li><a href="#upgrade-notes">Upgrade Notes</a></li>
+                    </ul>
+                </div>
+                <div class="c-body">
+                    
+                    <!-- About -->
+                    <div class="card" id="about">
+                        <h2>About Material Admin</h2>
+
+                        <br>
+
+                        <p>Material Admin is a Google Material Design inspired powerful-lightweight fully responsive retina display compatible admin template based on latest Bootstrap 3. Material Admin comes with both jQuery and AngularJs versions.</p>
+                        <p>Unless like other admin templates, all the plugin used in Material Admin are completely customized to match the Material Design.</p>
+
+                        <div class="text-center">
+                            <img src="img/cover.jpg" class="img-responsive" alt="" style="display: inline-block;">
+                        </div>
+                    </div>
+
+                    <i class="glyphicon glyphicon-circle-arrow-down card-step-ind"></i>
+
+                    <!-- Projuct Structure -->
+                    <div class="card" id="project_structure">
+                        <h2>Project structure</h2>
+                        
+                        <br>
+                        
+                        <p>Toggle between tabs for both jQuery and AngularJs project structures</p>
+                        
+                        <br><br>
+                        
+                        <ul class="nav nav-tabs nav-justified" role="tablist">
+                            <li class="active"><a href="#jquery" role="tab" data-toggle="tab"><strong>jQuery</strong></a></li>
+                            <li><a href="#angular" role="tab" data-toggle="tab"><strong>AngularJs</strong></a></li>
+                        </ul>
+
+                        <br>
+
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="jquery">
+<pre>
+- css
+  -- app.1.min.css
+  -- app.2.min.css
+  
+- fonts
+- img
+- js
+  -- flot-charts
+  -- charts.js
+  -- demo.js
+  -- functions.js 
+  
+- less
+  -- inc
+  -- app.less
+  
+- media
+- node_modules
+- vendors
+  -- bower_components
+  
+  gruntfile.js
+  package.json
+  index.html
+  ...
+</pre>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="angular">
+<pre>
+- css
+  -- app.1.min.css
+  -- app.2.min.css
+  
+- data
+- fonts
+- img
+- js
+  -- controller
+  -- modules
+  -- app.js
+  -- config.js
+  -- services.js
+  -- template.js 
+  
+- less
+  -- inc
+  -- app.less
+  
+- media
+- node_modules
+- templates
+- vendors
+  -- bower_components
+
+- views
+
+  gruntfile.js
+  package.json
+  index.html  
+  ...
+</pre>
+                        </div>
+                    </div>
+
+                    <br><br>
+
+                    <h4>About CSS files </h4>
+
+                    <br>
+
+                    <p>All LESS files including third party's are compiled in to a single CSS file and, splitted in to 2 minified pieces in order to gain support for IE 9. In IE 9, a sheet may contain up to only 4095 selectors and anything above will be ignored.</p>
+
+                    <p>Make sure to include both <code>app.min.1.css</code> and <code>app.min.2.css</code> in your project files in proper sequence.</p>
+
+                </div>
+
+                    <i class="glyphicon glyphicon-circle-arrow-down card-step-ind"></i>
+
+                    <!-- NodeJs and NPM -->
+                    <div class="card" id="node-npm">
+                        <h2>NodeJs and NPM</h2>
+
+                        <br>
+
+                        <p>Material Admin comes with GruntJs for automated tasks and a complete set of third party dependencies. Source files of these dependencies are not included in your downloaded directory and in order to install them, you'll need to have NodeJs and NPM installed in your computer. Make sure to install this duo before your proceed anything with your new project.</p>
+
+                        <br>
+
+                        <p><strong><a href="https://nodejs.org/en/" target="_blank">NodeJs</a></strong></p>
+                        <p><strong><a href="http://blog.npmjs.org/post/85484771375/how-to-install-npm" target="_blank">Installing NPM</a></strong></p>
+
+                    </div>
+
+                    <i class="glyphicon glyphicon-circle-arrow-down card-step-ind"></i>
+
+                    <!-- Installation -->
+                    <div class="card" id="installation">
+                        <h2>Installation</h2>
+
+                        <br>
+
+                        <p>Make sure to install both NodeJs and NPM in your computer as mentioned in previous section, before you proceed anything in this section.</p>
+
+                        <br>
+
+                        <ol>
+                            <li>Extract the file downloaded using any file archive utility software. </li>
+                            <li>Copy all the files and folders from template directory to your project directory.</li>
+                            <li>
+                                Install all the NPM dependencies by firing the following command in your main project directory where you can find <code>package.json</code>
+                                <pre>npm install</pre>
+                            </li>
+                            <li>That's it. Now you can start previewing Material Admin.</li>
+                        </ol>
+
+                        <br><br><br>
+
+                        <h4>Useful Links</h4>
+
+                        <br>
+
+                        <a href="http://bower.io/#getting-started" target="_blank">Bower: Getting Started</a><br>
+                        <a href="http://www.zell-weekeat.com/bower/">How to manage your frontend dependencies with Bower</a>
+
+                    </div>
+
+                    <i class="glyphicon glyphicon-circle-arrow-down card-step-ind"></i>
+
+                    <!-- Configuring GruntJs -->
+                    <div class="card" id="gruntjs">
+                        <h2>GruntJs</h2>
+
+                        <br>
+
+                        <p><a href="http://gruntjs.com/" target="_blank">GruntJs</a> is a task-based command line build tool for JavaScript projects. It helps making most of our manual tasks to automate such as minifying, compiling, splitting etc. In Material Admin, GruntJs is been used for:</p>
+
+                        <ol>
+                            <li>Compiling LESS to CSS.</li>
+                            <li>Splitting main CSS file to sub instances.</li>
+                            <li>Minification of CSS and JS files</li>
+                            <li>Concating JS files.</li>
+                            <li>Cleaning Temp files.</li>
+                            <li>Template Caching (AngularJs).</li>
+                        </ol>
+
+                        <p>All the above tasks are added in <code>gruntfile.js</code> which is available in the main project folder. <code>gruntfile</code> just creates a basic grunt.js that you can fill in with tasks.</p>
+
+                        <br><br>
+
+                        <h4>Installing GruntJs</h4>
+
+                        <br>
+
+                        <p>GruntJs is available as a <a href="https://www.npmjs.com/package/grunt" target="_blank">NPM package</a> and already included in our main NPM dependency list in <code>package.json</code></p>
+                        <p>Doing a simple:</p>
+
+                        <pre>npm install</pre>
+
+                        <p>as mentioned in '<a href="#node-npm">NodeJs and NPM</a>', will install all the dependencies including GruntJs.</p>
+
+                        <br><br>
+
+                        <h4>Before you make any changes...</h4>
+
+                        <br>
+
+                        <p>before you make any changes in <code>less</code> or <code>template</code> (Angularjs) directory files, make sure to run: </p>
+                        <pre>grunt watch</pre>
+                        <p><code>grunt watch</code> is a file watcher which will execute certain tasks when any given file changes. All less, js files and template files in angularjs variant should be watched in order to make changes in the output files (css and template.js).</p>
+
+                        <br><br>
+
+                        <h4>In order to create a distributed package (jQuery version only)...</h4>
+
+                        <br>
+
+                        <p>In order to create a distributed package which excludes all the dev related files, run the following Grunt command.</p>
+                        <pre>grunt dist</pre>
+                        <p>This will clean the project by removing all the temp files such as <code>.DS_Store</code> <code>.idea</code> and create a 'dist' folder with only the needed files to run and preview the template.</p>
+
+                        <br><br><br>
+
+                        <h4>Useful Links</h4>
+
+                        <br>
+
+                        <a href="http://gruntjs.com/getting-started" target="_blank">GruntJs: Getting Started</a><br>
+                        <a href="http://code.tutsplus.com/tutorials/meet-grunt-the-build-tool-for-javascript--net-24856" target="_blank">Meet Grunt: The Build Tool for JavaScript</a>
+
+                    </div>
+
+                    <i class="glyphicon glyphicon-circle-arrow-down card-step-ind"></i>
+
+                    <!-- Change log-->
+                    <div class="card" id="change-log">
+                        <h2>Change Log 1.5.3</h2>
+
+                        <br>
+
+                        <div class="alert alert-warning">Please note that this update (1.5.3) is only for the jQuery version and all the changes mentioned in this section are applicable only to the jQuery variant of the Material Admin.</div>
+
+                        <p><i>Newly added</i></p>
+                        <ul>
+                            <li>Dark Skin variant</li>
+                            <li><code>action.js</code> - Includes all the available actions within the template</li>
+                            <li><code>app.js</code> - Concatenate and minified version of all template specific js files</li>
+                            <li>SweetAlert.js for Custom Javascript Alerts</li>
+                            <li>New font 'Satisfy' for Todo Lists</li>
+                        </ul>
+
+                        <p><i>Updated</i></p>
+                        <ul>
+                            <li>UI of Checkbox and Radio (form.html)</li>
+                            <li>UI of Login Page (login.html)</li>
+                            <li>UI of Messages (messages.html)</li>
+                            <li>UI of most of the Widgets (widgets.html)</li>
+                            <li>
+                                Plugins:
+                                <ul>
+                                    <li>jQuery 2.2.3</li>
+                                    <li>Bootstrap 3.3.6</li>
+                                    <li>MomentJs 2.12.0</li>
+                                    <li>Chosen 1.5.1</li>
+                                    <li>Waves 0.7.5</li>
+                                    <li>SweetAlert 1.1.3</li>
+                                    <li>Summernote 0.8.1</li>
+                                    <li>SimpleWeather 3.1.0</li>
+                                    <li>NoUiSlider 8.3.0</li>
+                                    <li>MediaElement 2.20.1</li>
+                                    <li>Material Shadows 2.0.2</li>
+                                    <li>Material Design Icons 2.2.0</li>
+                                    <li>Malihu Custom Scrollbar Plugin 3.1.13</li>
+                                    <li>Light Gallery 1.2.18</li>
+                                    <li>Jquery Placeholder 2.3.1</li>
+                                    <li>Bootstrap Datetimepicker 4.17.37</li>
+                                    <li>Bootstrap Select 1.10.0</li>
+                                    <li>Textarea Autosize 3.0.15</li>
+                                    <li>Animate.css 3.5.1</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <p><i>Fixed</i></p>
+                        <ul>
+                            <li>Login UI overlapping in mobile</li>
+                            <li>Pagination color bleeding in firefox (Thanks wilsonfiifi)</li>
+                            <li>Messages list extending when there is not much results</li>
+                        </ul>
+
+                        <p><i>Removed</i></p>
+                        <ul>
+                            <li>Container width toggling</li>
+                            <li>Bootstrap SweetAlert in favour of original SweetAlert</li>
+                        </ul>
+
+
+                    </div>
+
+                    <i class="glyphicon glyphicon-circle-arrow-down card-step-ind"></i>
+
+                    <!-- Upgrade Notes -->
+                    <div class="card" id="upgrade-notes">
+                        <h2>Upgrade Notes</h2>
+
+                        <br>
+
+                        <div class="alert alert-warning">Please note that this update (1.5.3) is only for the jQuery version and all the changes mentioned in this section are applicable only to the jQuery variant of the Material Admin.</div>
+
+                        <p>This release includes a long list of markups and class/id name changes in order to keep things simple and clean. Therefore those who trying to upgrade from any previous versions of Material Admin, are recommended to go through the markups of each and every page and replace them accordingly. Moreover, some plugins may not work due to the update of it's latest release thus it can be fixed by updating the relevant js and css codes as given in the new release.</p>
+
+                    </div>
+
+                    <i class="glyphicon glyphicon-circle-arrow-up card-step-ind"></i>
+            </div>
+
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
